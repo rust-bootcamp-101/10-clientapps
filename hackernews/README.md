@@ -1,17 +1,10 @@
-# Development
+dioxus开发前端说明
 
-1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-2. Install the tailwind css cli: https://tailwindcss.com/docs/installation
-3. Run the following command in the root of the project to start the tailwind CSS compiler:
+1.转换前端文件成dioxus组件
 
-```bash
-npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
-```
-
-Run the following command in the root of the project to start the Dioxus dev server:
+将前端html文件放在htmls文件夹里，查看效果，然后拆分成组件
+然后使用 dx 命令将html组件转成 dioxus 组件
 
 ```bash
-dx serve --hot-reload
+dx translate --file htmls/sotry_item.html
 ```
-
-- Open the browser to http://localhost:8080
